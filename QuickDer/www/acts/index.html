@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name = "format-detection" content = "telephone=no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;" />
+        <link rel="stylesheet" type="text/css" href="../css/index.css" />
+	    <link rel="stylesheet" href="../js/jquery_mobile/jquery.mobile-1.1.1.min.css" />
+	    <script src="../js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../../Plugins/PGMapLauncher.js"></script>
+	    <script src="../js/jquery_mobile/jquery.mobile-1.1.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".Close").click(function () {
+                    url = "../index.html";
+                    $(location).attr('href', url);
+                });
+            });
+        </script>
+        <title>QuickDer</title>
+    </head>
+    <body>
+        <div data-role="page" id=Start>
+
+	        <div data-role="header">
+		        <h1>Bienvenido</h1>
+	        </div>
+
+	        <div data-role="content">
+                <ul data-role="listview" data-theme="b">
+	                <li><a href=#>Lugares Cercanos</a></li>
+	                <li><a href=#Location>Mapa de la Ciudad</a></li>
+	                <li><a href=#>Números de Compras</a></li>
+	                <li><a href=#>Reservas</a></li>
+                </ul>
+            </div>
+
+            <div data-role="footer" data-id="foo1" data-position="fixed">
+	            <div data-role="navbar">
+		            <ul>
+			            <li><a href=#Start class="ui-btn-active ui-state-persist" data-icon=home>Inicio</a></li>
+			            <li><a href=#Profile data-icon=info>Perfil</a></li>
+                        <li><a href=#Help data-icon=help>Ayuda</a></li>
+                        <li><a href=#Close data-icon=delete class=Close>Cerrar</a></li>
+		            </ul>
+	            </div>
+            </div>
+
+        </div>
+
+        <div data-role="page" id=Location data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+		        <h1>Ubicación</h1>
+	        </div>
+
+	        <div data-role="content">
+                <script type="text/javascript">
+                    navigator.plugins.pgMapLauncher.searchNear("Wedding Chapel", { latitude: 36.111224, longitude: -115.172194 });
+                </script>
+            </div>
+
+        </div>
+
+        <div data-role="page" id=Profile data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+                <h1>Opciones</h1>
+	        </div>
+
+	        <div data-role="content">
+                <ul data-role="listview" data-theme="b">
+	                <li><a href=#>Perfil</a></li>
+	                <li><a href=#Change_Pass>Cambiar Contraseña</a></li>
+                </ul>
+            </div>
+
+            <div data-role="footer" data-id="foo1" data-position="fixed">
+	            <div data-role="navbar">
+		            <ul>
+			            <li><a href=#Start data-icon=home>Inicio</a></li>
+			            <li><a href=#Profile data-icon=info class="ui-btn-active ui-state-persist">Perfil</a></li>
+                        <li><a href=#Help data-icon=help>Ayuda</a></li>
+                        <li><a href=#Close data-icon=delete class=Close>Cerrar</a></li>
+		            </ul>
+	            </div>
+            </div>
+
+        </div>
+
+        <div data-role="page" id=Help data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+                <h1>Opciones</h1>
+	        </div>
+
+	        <div data-role="content">
+                <ul data-role="listview" data-theme="b">
+	                <li><a href=#>¿Cómo comprar con QuickDer?</a></li>
+	                <li><a href=#>¿Cómo hacer reservas con QuickDer?</a></li>
+	                <li><a href=#About>Acerca de...</a></li>
+                </ul>
+            </div>
+
+            <div data-role="footer" data-id="foo1" data-position="fixed">
+	            <div data-role="navbar">
+		            <ul>
+			            <li><a href=#Start data-icon=home>Inicio</a></li>
+			            <li><a href=#Profile data-icon=info>Perfil</a></li>
+                        <li><a href=#Help data-icon=help class="ui-btn-active ui-state-persist">Ayuda</a></li>
+                        <li><a href=#Close class=Close data-icon=delete>Cerrar</a></li>
+		            </ul>
+	            </div>
+            </div>
+
+        </div>
+
+        <div data-role="page" id=Change_Pass data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+                <h1>Cambiar Contraseña</h1>
+	        </div>
+
+	        <div data-role="content">
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <label>Antigua Contraseña</label>
+                        </td>
+                        <td>
+                            <input id="A_Password" type="password" class="twitterStyleTextbox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Contraseña</label>
+                        </td>
+                        <td>
+                            <input id="Password" type="password" class="twitterStyleTextbox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Repetir Contraseña</label>
+                        </td>
+                        <td>
+                            <input id="R_Password" type="password" class="twitterStyleTextbox" />
+                        </td>
+                    </tr>
+                </table>
+                <div style="text-align:center;">
+                    <label id="lblErr"></label>
+                    <br />
+                    <input id="Submit" type="submit" value="Actualizar" />
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="page" id=About data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+                <h1>Acerca de</h1>
+	        </div>
+
+	        <div data-role="content">
+                <p style="text-align:justify;">
+                    QuickDer es un proyecto OpenSource, diseñado y mantenido por SuperNova y se encuentra licenciado bajo la GPL2.
+                    <br />
+                    <b>Diseñado por:</b>
+                </p>
+                <ul>
+                    <li>Federico Alberto Navarrete Mixco</li>
+                    <li>Edgar Armando Regalado López</li>
+                </ul>
+                <br />
+                <p style="font-weight:bold; font-size:xx-large; text-align:center;">Año 2012</p>
+            </div>
+
+        </div>
+
+
+        <script type="text/javascript" src="../cordova-2.0.0.js"></script>
+<!--        <script type="text/javascript" src="js/index.js"></script>-->
+    </body>
+</html>

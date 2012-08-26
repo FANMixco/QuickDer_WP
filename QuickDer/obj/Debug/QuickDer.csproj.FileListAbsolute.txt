@@ -1,0 +1,14 @@
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\Bin\Debug\ApplicationIcon.png
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\Bin\Debug\Background.png
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\Bin\Debug\QuickDer.dll
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\Bin\Debug\QuickDer.pdb
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\Bin\Debug\AppManifest.xaml
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\Bin\Debug\QuickDer.xap
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\Bin\Debug\WP7CordovaClassLib.dll
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\obj\Debug\QuickDer.csprojResolveAssemblyReference.cache
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\obj\Debug\App.g.i.cs
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\obj\Debug\MainPage.g.i.cs
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\obj\Debug\QuickDer.g.resources
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\obj\Debug\QuickDer.dll
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\obj\Debug\QuickDer.pdb
+c:\users\fanmixco\documents\visual studio 2010\Projects\QuickDer\QuickDer\obj\Debug\XapCacheFile.xml
