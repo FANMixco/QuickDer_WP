@@ -90,6 +90,19 @@ h1 {
     text-align:center;
 }
 
+h4.notify1{
+    color:Green;
+}
+
+h4.notify2{
+    color:Purple;
+}
+
+h4.notify3{
+    color:Red;
+    font-style:italic;
+}
+
 .status {
     background-color:#333333;
     border-radius:4px;

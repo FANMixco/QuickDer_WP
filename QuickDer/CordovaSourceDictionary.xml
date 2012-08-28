@@ -6,6 +6,7 @@
     <FilePath Value="www\js\index.js"/>
     <FilePath Value="www\acts\register.html"/>
     <FilePath Value="www\js\jquery-1.7.1.min.js"/>
+    <FilePath Value="www\js\jquery.ba-dotimeout.min.js"/>
     <FilePath Value="www\js\jquery_mobile\images\ajax-loader.gif"/>
     <FilePath Value="www\js\jquery_mobile\images\ajax-loader.png"/>
     <FilePath Value="www\js\jquery_mobile\images\icons-18-black.png"/>
@@ -20,6 +21,6 @@
     <FilePath Value="www\js\jquery_mobile\jquery.mobile.theme-1.1.1.min.css"/>
     <FilePath Value="www\cordova-2.0.0.js"/>
     <FilePath Value="www\css\index.css"/>
-    <FilePath Value="www\img\cordova.png"/>
+    <FilePath Value="www\img\logo.png"/>
     <FilePath Value="www\index.html"/>
 </CordovaSourceDictionary>
