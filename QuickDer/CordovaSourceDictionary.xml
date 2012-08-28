@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This file is auto-generated, do not edit! -jm -->
 <CordovaSourceDictionary>
+    <FilePath Value="www\acts\copyright.html"/>
     <FilePath Value="www\acts\index.html"/>
     <FilePath Value="www\js\index.js"/>
     <FilePath Value="www\acts\register.html"/>

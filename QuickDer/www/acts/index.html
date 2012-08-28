@@ -35,6 +35,7 @@
                 geoLocationProvider.getCurrentPosition();
 
             }
+
         </script>
         <title>QuickDer</title>
     </head>
@@ -87,7 +88,7 @@
 
 	        <div data-role="content">
                 <ul data-role="listview" data-theme="b">
-	                <li><a href=#>Perfil</a></li>
+	                <li><a href=#My_Profile>Perfil</a></li>
 	                <li><a href=#Change_Pass>Cambiar Contraseña</a></li>
                 </ul>
             </div>
@@ -145,7 +146,7 @@
                             <label>Antigua Contraseña</label>
                         </td>
                         <td>
-                            <input id="A_Password" type="password" />
+                            <input id="A_Password" type="password" maxlength="20"  />
                         </td>
                     </tr>
                     <tr>
@@ -153,7 +154,7 @@
                             <label>Contraseña</label>
                         </td>
                         <td>
-                            <input id="Password" type="password" />
+                            <input id="Password" type="password" maxlength="20"  />
                         </td>
                     </tr>
                     <tr>
@@ -161,14 +162,64 @@
                             <label>Repetir Contraseña</label>
                         </td>
                         <td>
-                            <input id="R_Password" type="password" />
+                            <input id="R_Password" type="password" maxlength="20"  />
                         </td>
                     </tr>
                 </table>
                 <div style="text-align:center;">
-                    <label id="lblErr"></label>
+                    <label class="lblErr"></label>
                     <br />
                     <input id="Submit" type="submit" value="Actualizar" />
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="page" id=My_Profile data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+                <h1>Perfil</h1>
+	        </div>
+
+	        <div data-role="content">
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <label>Nombre</label>
+                        </td>
+                        <td>
+                            <input id="Names" maxlength="20" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Nombre secundario</label>
+                        </td>
+                        <td>
+                            <input id="MNames" maxlength="20" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Apellidos</label>
+                        </td>
+                        <td>
+                            <input id="LNames" maxlength="20" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Correo electrónico</label>
+                        </td>
+                        <td>
+                            <input id="Email" maxlength="100" />
+                        </td>
+                    </tr>
+                </table>
+                <div style="text-align:center;">
+                    <label class="lblErr"></label>
+                    <br />
+                    <input id="Submit1" type="submit" value="Actualizar" />
                 </div>
             </div>
 
@@ -182,7 +233,7 @@
 
 	        <div data-role="content">
                 <p style="text-align:justify;">
-                    QuickDer es un proyecto OpenSource, diseñado y mantenido por SuperNova y se encuentra licenciado bajo la GPL2.
+                    QuickDer es un proyecto OpenSource, diseñado y mantenido por <i>SuperNova</i> y se encuentra licenciado bajo la GPL2.
                     <br />
                     <b>Diseñado por:</b>
                 </p>
@@ -196,8 +247,6 @@
 
         </div>
 
-
         <script type="text/javascript" src="../cordova-2.0.0.js"></script>
-<!--        <script type="text/javascript" src="js/index.js"></script>-->
     </body>
 </html>

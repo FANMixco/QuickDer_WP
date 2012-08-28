@@ -8,60 +8,54 @@
 	    <link rel="stylesheet" href="js/jquery_mobile/jquery.mobile-1.1.1.min.css" />
 	    <script src="js/jquery-1.7.1.min.js"></script>
 	    <script src="js/jquery_mobile/jquery.mobile-1.1.1.min.js"></script>
-        <title>Registrarse</title>
+        <title>Inicio</title>
         <script type="text/javascript">
             $(document).ready(function () {
                 $("#Submit1").click(function () {
                     url = "acts/index.html";
                     $(location).attr('href', url);
                 });
-            });
 
-            $(document).ready(function () {
                 $("#Register").click(function () {
-                    url = "../Plugins/PGMapLuncher.html";
+                    url = "acts/register.html";
                     $(location).attr('href', url);
                 });
             });
-
         </script>
     </head>
     <body>
-        <div data-role="page">
-            <!--<div id="deviceready">
-                <p class="status pending blink">Connecting to Device</p>
-                <p class="status complete blink hide">Device is Ready</p>
-            </div>-->
+        <div data-role="page" id=Login>
+
+	        <div data-role="header">
+                <h1>QUICKDER</h1>
+	        </div>
+
 	        <div data-role="content">
-                <div id="form">
-                    <h1>QUICKDER</h1><hr />
-                    <table style="width: 100%;">
-                        <tr>
-                            <td>
-                                <label>Usuario</label></td>
-                            <td>
-                                <input id="User" type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Contraseña</label></td>
-                            <td>
-                                <input id="Password" type="password" />
-                            </td>
-                        </tr>
-                    </table>
-                    <div style="text-align:center;">
-                        <label id="lblErr"></label>
-                        <br />
-                        <input id="Submit1" type="submit" value="Ingresar" />
-                        <br />
-                        <a href=# id="Register">Registrarse</a>
-                    </div>
-            </div>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <label>Usuario</label></td>
+                        <td>
+                            <input id="User" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Contraseña</label></td>
+                        <td>
+                            <input id="Password" type="password" />
+                        </td>
+                    </tr>
+                </table>
+                <div style="text-align:center;">
+                    <label class="lblErr"></label>
+                    <br />
+                    <input id="Submit1" type="submit" value="Ingresar" />
+                    <br />
+                    <a href=# id="Register">Registrarse</a>
+                </div>
             </div>
         </div>
         <script type="text/javascript" src="cordova-2.0.0.js"></script>
-<!--        <script type="text/javascript" src="js/index.js"></script>-->
     </body>
 </html>
