@@ -48,7 +48,7 @@
 
 	        <div data-role="content">
                 <ul data-role="listview" data-theme="b">
-	                <li><a href=#>Lugares Cercanos</a></li>
+	                <li><a href=#Places>Lugares Cercanos</a></li>
 	                <li><a href=#Location>Mapa de la Ciudad</a></li>
 	                <li><a href=#>Números de Compras</a></li>
 	                <li><a href=#>Reservas</a></li>
@@ -76,6 +76,52 @@
 
 	        <div data-role="content">
                 <div id='myMap' style="position:relative; width:90%; height:400px; margin:auto;"></div>
+            </div>
+
+        </div>
+
+        <div data-role="page" id=Places data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+		        <h1>Lugares</h1>
+	        </div>
+
+	        <div data-role="content">
+                <ul data-role="listview" data-theme="g">
+	                <li><a href="#Menu?Restaurant=1">
+                        <img src="http://cdn-android.apptap.com/img/67/couponcoop.pizzahut/390323325.png" alt="" />
+                        <h3>Pizza Hut</h3>
+                        <p>Cómida rápida.</p>
+                    </a></li>
+	                <li><a href="#Menu">
+                        <img src="http://www.gestionrestaurantes.com/Solid/Galeria/PolloCampero.jpg" alt="" />
+                        <h3>Pollo Campero</h3>
+                        <p>Cómida rápida.</p>
+                    </a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div data-role="page" id=Menu data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+		        <h1>Menús</h1>
+	        </div>
+
+	        <div data-role="content">
+                <ul data-role="listview">
+				    <li>
+				        <img src="http://www.midwesternerinmexico.com/wp-content/uploads/2008/12/original-pile-of-sick.jpg" alt="" />
+				        <h3>Cheesy Bites</h3>
+				        <p></p>
+			        </li>
+			        <li>
+				        <img src="http://pizzahutacdr.files.wordpress.com/2012/06/pizza-hut-14-0r1ym8qnfj-800x6001.jpg" alt="" />
+				        <h3>Dos Pizzas Personales</h3>
+				        <p></p>
+			        </li>
+			    </ul>
             </div>
 
         </div>
@@ -114,6 +160,7 @@
 
 	        <div data-role="content">
                 <ul data-role="listview" data-theme="b">
+	                <li><a href=#>¿Ver ofertas con QuickDer?</a></li>
 	                <li><a href=#>¿Cómo comprar con QuickDer?</a></li>
 	                <li><a href=#>¿Cómo hacer reservas con QuickDer?</a></li>
 	                <li><a href=#About>Acerca de...</a></li>
