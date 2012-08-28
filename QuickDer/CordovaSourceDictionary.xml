@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This file is auto-generated, do not edit! -jm -->
 <CordovaSourceDictionary>
-    <FilePath Value="www\acts\acts_profile.html"/>
-    <FilePath Value="www\acts\profile.html"/>
-    <FilePath Value="www\acts\numbers.html"/>
-    <FilePath Value="www\acts\change_pass.html"/>
-    <FilePath Value="www\acts\reservations.html"/>
     <FilePath Value="www\acts\index.html"/>
-    <FilePath Value="www\css\Form_Style.css"/>
     <FilePath Value="www\js\index.js"/>
     <FilePath Value="www\acts\register.html"/>
     <FilePath Value="www\js\jquery-1.7.1.min.js"/>

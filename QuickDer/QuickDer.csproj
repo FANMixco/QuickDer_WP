@@ -103,13 +103,7 @@
       <SubType>Designer</SubType>
     </Content>
     <EmbeddedResource Include="Plugins\PGMapLauncher.js" />
-    <Content Include="www\acts\acts_profile.html" />
-    <Content Include="www\acts\profile.html" />
-    <Content Include="www\acts\numbers.html" />
-    <Content Include="www\acts\change_pass.html" />
-    <Content Include="www\acts\reservations.html" />
     <Content Include="www\acts\index.html" />
-    <Content Include="www\css\Form_Style.css" />
     <Content Include="www\js\index.js" />
     <Content Include="www\acts\register.html" />
     <Content Include="www\js\jquery-1.7.1.min.js" />
