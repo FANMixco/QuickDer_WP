@@ -8,6 +8,7 @@
 	    <link rel="stylesheet" href="../js/jquery_mobile/jquery.mobile-1.1.1.min.css" />
 	    <script src="../js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="../../Plugins/PGMapLauncher.js"></script>
+        <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
 	    <script src="../js/jquery_mobile/jquery.mobile-1.1.1.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
@@ -16,10 +17,27 @@
                     $(location).attr('href', url);
                 });
             });
+
+
+            function GetMap() {
+
+                // Set the map options
+                var mapOptions = { credentials: "Ap9iyEIwF_bdxEYm85OiIgP3IIgsgGzoyAmH5KhrBuGbE8DVVdtJh1rX1vA8waza" };
+
+                // Initialize the map
+                var map = new Microsoft.Maps.Map(document.getElementById("myMap"), mapOptions);
+
+                // Initialize the location provider
+                var geoLocationProvider = new Microsoft.Maps.GeoLocationProvider(map);
+
+                // Get the user's current location
+                geoLocationProvider.getCurrentPosition();
+
+            }
         </script>
         <title>QuickDer</title>
     </head>
-    <body>
+    <body onload="GetMap();">
         <div data-role="page" id=Start>
 
 	        <div data-role="header">
@@ -55,9 +73,7 @@
 	        </div>
 
 	        <div data-role="content">
-                <script type="text/javascript">
-                    navigator.plugins.pgMapLauncher.searchNear("Wedding Chapel", { latitude: 36.111224, longitude: -115.172194 });
-                </script>
+                <div id='myMap' style="position:relative; width:275px; height:400px; margin:auto;"></div>
             </div>
 
         </div>
