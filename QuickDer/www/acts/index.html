@@ -63,7 +63,7 @@
 		            <ul>
 			            <li><a href="#Places" id="place" data-icon="custom" data-theme="b">Lugares</a></li>
 			            <li><a href="#Location" id="map" data-icon="custom" data-theme="b">Mapa</a></li>
-			            <li><a href="#States" id="search" data-icon="custom" data-theme="b">Buscar</a></li>
+			            <li><a href="#Search" id="search" data-icon="custom" data-theme="b">Buscar</a></li>
 		            </ul>
 		            <ul>
 			            <li><a href="#" id="numbers" data-icon="custom" data-theme="b">Números</a></li>
@@ -111,11 +111,34 @@
             </div>
 
         </div>
+        
+        <div data-role="page" id=Search data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+		        <h1>Rubros</h1>
+	        </div>
+
+	        <div data-role="content">
+                <ul data-role="listview" data-theme="g" data-filter="true">
+	                <li><a href="#States">
+                        <h3>Todos</h3>
+                    </a></li>
+	                <li><a href="#">
+                        <h3>Comida Rápida</h3>
+                    </a></li>
+	                <li><a href="#">
+                        <h3>Restaurantes</h3>
+                    </a></li>
+                </ul>
+            </div>
+
+        </div>
 
         <div data-role="page" id=States data-add-back-btn=true data-back-btn-text=Atrás>
 
 	        <div data-role="header">
 		        <h1>Departamentos</h1>
+                <a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-theme="b">Home</a>
 	        </div>
 
 	        <div data-role="content">
@@ -135,15 +158,47 @@
 
 	        <div data-role="header">
 		        <h1>Ciudades</h1>
+                <a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-theme="b">Home</a>
 	        </div>
 
 	        <div data-role="content">
                 <ul data-role="listview" data-theme="g" data-filter="true">
-	                <li><a href="#Places">
+	                <li><a href="#S_Places">
                         <h3>San Salvador</h3>
                     </a></li>
 	                <li><a href="#">
                         <h3>Soyapango</h3>
+                    </a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    <div data-role="page" id=S_Places data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+		        <h1>Lugares</h1>
+                <a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-theme="b">Home</a>
+	        </div>
+
+	        <div data-role="content">
+                <ul data-role="listview" data-theme="g" data-filter="true">
+                    <li data-role="list-divider">Comida Rápida</li>
+	                <li><a href="#Menu">
+                        <img src="http://cdn-android.apptap.com/img/67/couponcoop.pizzahut/390323325.png" alt="" />
+                        <h3>Pizza Hut</h3>
+                        <p></p>
+                    </a></li>
+	                <li><a href="#">
+                        <img src="http://www.gestionrestaurantes.com/Solid/Galeria/PolloCampero.jpg" alt="" />
+                        <h3>Pollo Campero</h3>
+                        <p></p>
+                    </a></li>
+                    <li data-role="list-divider">Restaurante</li>
+	                <li><a href="#">
+                        <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn1/40483_139153709453083_1571467_n.jpg" alt="" />
+                        <h3>Restaurante Hunan El Salvador</h3>
+                        <p></p>
                     </a></li>
                 </ul>
             </div>
@@ -184,6 +239,7 @@
 
 	        <div data-role="header">
 		        <h1>Menús</h1>
+                <a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-theme="b">Home</a>
 	        </div>
 
 	        <div data-role="content">

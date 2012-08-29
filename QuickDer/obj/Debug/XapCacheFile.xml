@@ -1,12 +1,12 @@
-﻿<xapCache source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\Bin\Debug\QuickDer.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="29/08/2012 02:41:06 a.m.">
+﻿<xapCache source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\Bin\Debug\QuickDer.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="29/08/2012 01:49:21 p.m.">
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="19/08/2012 01:23:59 p.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\Background.png" archivePath="Background.png" lastWriteTime="19/08/2012 01:23:24 p.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="19/08/2012 01:23:24 p.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\obj\Debug\QuickDer.dll" archivePath="QuickDer.dll" lastWriteTime="29/08/2012 02:16:45 a.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\CordovaLib\WP7CordovaClassLib.dll" archivePath="WP7CordovaClassLib.dll" lastWriteTime="19/08/2012 01:23:24 p.m." />
-  <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\CordovaSourceDictionary.xml" archivePath="CordovaSourceDictionary.xml" lastWriteTime="29/08/2012 02:41:06 a.m." />
+  <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\CordovaSourceDictionary.xml" archivePath="CordovaSourceDictionary.xml" lastWriteTime="29/08/2012 01:49:21 p.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\acts\copyright.html" archivePath="www\acts\copyright.html" lastWriteTime="28/08/2012 11:45:23 a.m." />
-  <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\acts\index.html" archivePath="www\acts\index.html" lastWriteTime="29/08/2012 02:41:03 a.m." />
+  <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\acts\index.html" archivePath="www\acts\index.html" lastWriteTime="29/08/2012 01:49:19 p.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\img\group.png" archivePath="www\img\group.png" lastWriteTime="29/08/2012 02:36:57 a.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\img\persondot.png" archivePath="www\img\persondot.png" lastWriteTime="29/08/2012 02:37:13 a.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\img\calendar.png" archivePath="www\img\calendar.png" lastWriteTime="29/08/2012 02:36:52 a.m." />
@@ -16,10 +16,10 @@
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\img\marker.png" archivePath="www\img\marker.png" lastWriteTime="29/08/2012 02:35:39 a.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\img\map.png" archivePath="www\img\map.png" lastWriteTime="29/08/2012 02:36:08 a.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\img\shopping-cart.png" archivePath="www\img\shopping-cart.png" lastWriteTime="29/08/2012 02:37:29 a.m." />
-  <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\img\star.png" archivePath="www\img\star.png" lastWriteTime="29/08/2012 02:36:46 a.m." />
+  <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\img\star.png" archivePath="www\img\star.png" lastWriteTime="29/08/2012 01:44:14 p.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\img\user.png" archivePath="www\img\user.png" lastWriteTime="15/10/2010 01:08:48 p.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\js\index.js" archivePath="www\js\index.js" lastWriteTime="19/08/2012 01:23:24 p.m." />
-  <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\acts\register.html" archivePath="www\acts\register.html" lastWriteTime="28/08/2012 11:44:06 a.m." />
+  <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\acts\register.html" archivePath="www\acts\register.html" lastWriteTime="29/08/2012 01:12:11 p.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\js\jquery-1.7.1.min.js" archivePath="www\js\jquery-1.7.1.min.js" lastWriteTime="21/08/2012 10:48:45 a.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\js\jquery.ba-dotimeout.min.js" archivePath="www\js\jquery.ba-dotimeout.min.js" lastWriteTime="28/08/2012 11:03:21 a.m." />
   <file source="C:\Users\FANMixco\Documents\Visual Studio 2010\Projects\QuickDer_WP\QuickDer\www\js\jquery_mobile\images\ajax-loader.gif" archivePath="www\js\jquery_mobile\images\ajax-loader.gif" lastWriteTime="11/07/2012 12:37:52 p.m." />
