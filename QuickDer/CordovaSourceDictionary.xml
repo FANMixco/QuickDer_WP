@@ -3,6 +3,17 @@
 <CordovaSourceDictionary>
     <FilePath Value="www\acts\copyright.html"/>
     <FilePath Value="www\acts\index.html"/>
+    <FilePath Value="www\img\group.png"/>
+    <FilePath Value="www\img\persondot.png"/>
+    <FilePath Value="www\img\calendar.png"/>
+    <FilePath Value="www\img\flag.png"/>
+    <FilePath Value="www\img\id.png"/>
+    <FilePath Value="www\img\search.png"/>
+    <FilePath Value="www\img\marker.png"/>
+    <FilePath Value="www\img\map.png"/>
+    <FilePath Value="www\img\shopping-cart.png"/>
+    <FilePath Value="www\img\star.png"/>
+    <FilePath Value="www\img\user.png"/>
     <FilePath Value="www\js\index.js"/>
     <FilePath Value="www\acts\register.html"/>
     <FilePath Value="www\js\jquery-1.7.1.min.js"/>
