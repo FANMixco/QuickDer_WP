@@ -101,16 +101,14 @@
     <Content Include="www\acts\copyright.html" />
     <Content Include="www\acts\index.html" />
     <Content Include="www\img\group.png" />
-    <Content Include="www\img\persondot.png" />
+    <Content Include="www\img\key.png" />
     <Content Include="www\img\calendar.png" />
-    <Content Include="www\img\flag.png" />
     <Content Include="www\img\id.png" />
     <Content Include="www\img\search.png" />
     <Content Include="www\img\marker.png" />
     <Content Include="www\img\map.png" />
     <Content Include="www\img\shopping-cart.png" />
     <Content Include="www\img\star.png" />
-    <Content Include="www\img\user.png" />
     <Content Include="www\js\index.js" />
     <Content Include="www\acts\register.html" />
     <Content Include="www\js\jquery-1.7.1.min.js" />
