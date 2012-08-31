@@ -98,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CordovaSourceDictionary.xml" />
+    <Content Include="www\acts\map.html" />
     <Content Include="www\acts\copyright.html" />
     <Content Include="www\acts\index.html" />
     <Content Include="www\img\group.png" />

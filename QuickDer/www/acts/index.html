@@ -36,7 +36,7 @@
 
             }
 
-            
+            $(".ui-footer-fixed").fixedToolbar("updatePosition");            
         </script>
         <title>QuickDer</title>
     </head>
@@ -66,8 +66,8 @@
 			            <li><a href="#Search" id="search" data-icon="custom" data-theme="b">Buscar</a></li>
 		            </ul>
 		            <ul>
-			            <li><a href="#" id="numbers" data-icon="custom" data-theme="b">Números</a></li>
-			            <li><a href="#" id="stockpile" data-icon="custom" data-theme="b">Reservas</a></li>
+			            <li><a href="#" id="numbers" data-icon="custom" data-theme="b">Compras</a></li>
+			            <li><a href="#" id="stockpile" data-icon="custom" data-theme="b">Reservaciones</a></li>
 		            </ul>
 		        </div>
 
@@ -115,7 +115,7 @@
         <div data-role="page" id=Search data-add-back-btn=true data-back-btn-text=Atrás>
 
 	        <div data-role="header">
-		        <h1>Rubros</h1>
+		        <h1>Categorías</h1>
 	        </div>
 
 	        <div data-role="content">
@@ -320,7 +320,7 @@
 		            <ul>
 			            <li><a href="#" id="star" data-icon="custom" data-theme="e">¿Ofertas?</a></li>
 			            <li><a href="#" id="shopping" data-icon="custom" data-theme="b">¿Compras?</a></li>
-			            <li><a href="#" id="h_stockpile" data-icon="custom" data-theme="b">¿Reservas?</a></li>
+			            <li><a href="#" id="h_stockpile" data-icon="custom" data-theme="b">¿Reservaciones?</a></li>
 		            </ul>
                     <ul>
 			            <li><a href="#About" id="about" data-icon="custom" data-theme="b">Acerca De</a></li>                    
@@ -436,7 +436,8 @@
                         </td>
                         <td>
                             <select id="Country">
-                                <option></option>
+                                <option value="1">El Salvador</option>
+                                <option value="2">Guatemala</option>
                             </select>
                         </td>
                     </tr>
@@ -463,8 +464,8 @@
                     <b>Diseñado por:</b>
                 </p>
                 <ul>
-                    <li>Federico Alberto Navarrete Mixco</li>
-                    <li>Edgar Armando Regalado López</li>
+                    <li>Federico Navarrete</li>
+                    <li>Edgar Regalado</li>
                 </ul>
                 <br />
                 <p style="font-weight:bold; font-size:xx-large; text-align:center;">Año 2012</p>
