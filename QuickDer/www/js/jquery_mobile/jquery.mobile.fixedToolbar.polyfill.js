@@ -6,8 +6,8 @@ License Dual MIT or GPLv2
 */
 (function ($, undefined) {
 
-    // If the supportBlacklist is returning true, it's a blacklisted browser. 
-    if ($.mobile.fixedtoolbar.prototype.options.supportBlacklist() && $.support.scrollTop) {
+    // If the supportBlacklist is returning true, it's a blacklisted browser.
+    if ($.support.scrollTop) {
 
         // Keep a reference to the original _create method
         var oldcreate = $.mobile.fixedtoolbar.prototype._create,
@@ -39,8 +39,6 @@ License Dual MIT or GPLv2
 
 			            }
 			        })();
-
-			        $.mobile.fixedtoolbar.prototype.updatePosition = resetPos;
 
 			        // Per page show, re-set up the event handling
 			        page.bind("pagebeforeshow", function (e) {
