@@ -59,11 +59,11 @@
 
                 // Set the center of the map to the user's position and zomm into a more detailed level
                 map.setCenter(user_lat_long);
-                map.setZoom(15);
+                map.setZoom(17);
 
             }
 
-            google.setOnLoadCallback(mapInit);
+            google.setOnLoadCallback(mapInit());
 
         </script>
         <title>QuickDer</title>
@@ -334,8 +334,8 @@
 		            <ul>
 			            <li><a href="#" id="star" data-icon="custom" data-theme="e">¿Ofertas?</a></li>
 			            <li><a href="#" id="shopping" data-icon="custom" data-theme="b">¿Compras?</a></li>
-			            <li><a href="#" id="h_stockpile" data-icon="custom" data-theme="b">¿Reservaciones?</a></li>
-		            </ul>
+			            <li><a href="#" id="h_stockpile" data-icon="custom" data-theme="b">¿Reservaciones?</a></li>                    
+                    </ul>
                     <ul>
 			            <li><a href="#About" id="about" data-icon="custom" data-theme="b">Acerca De</a></li>                    
                     </ul>
