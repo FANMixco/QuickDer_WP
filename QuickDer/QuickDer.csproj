@@ -101,6 +101,7 @@
     <Content Include="www\acts\map.html" />
     <Content Include="www\acts\copyright.html" />
     <Content Include="www\acts\index.html" />
+    <Content Include="www\img\center.png" />
     <Content Include="www\img\group.png" />
     <Content Include="www\img\key.png" />
     <Content Include="www\img\calendar.png" />
