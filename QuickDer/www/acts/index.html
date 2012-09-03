@@ -6,6 +6,28 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;" />
         <link rel="stylesheet" type="text/css" href="../css/index.css" />
 	    <link rel="stylesheet" href="../js/jquery_mobile/jquery.mobile-1.1.1.min.css" />
+        <style type="text/css">
+
+            .details-page {
+                width: 100%;
+                height: 100%;
+            }
+
+            #map_content {
+                padding: 0px;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            #myMap {
+                margin: auto;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+            }
+
+        </style>
         <script type="text/javascript" src="../cordova-2.0.0.js"></script>
 	    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
 	    <script type="text/javascript" src="../js/jquery.ba-dotimeout.min.js"></script>
@@ -18,6 +40,7 @@
                     url = "../index.html";
                     $(location).attr('href', url);
                 });
+
             });
 
 
@@ -113,7 +136,7 @@
 
         </div>
 
-        <div data-role="page" id=Location data-add-back-btn=true data-back-btn-text=Atrás>
+        <div data-role="page" id=Location data-add-back-btn=true data-back-btn-text=Atrás class="details-page">
 
             <script type="text/javascript">
                 $.doTimeout(1000, function () {
@@ -125,10 +148,9 @@
 		        <h1>Ubicación</h1>
 	        </div>
 
-	        <div data-role="content">
-                <div id='myMap' style="width:100%; height:400px; margin:auto;"></div>
+	        <div data-role="content" id=map_content>
+                <div id='myMap'></div>
             </div>
-
         </div>
         
         <div data-role="page" id=Search data-add-back-btn=true data-back-btn-text=Atrás>
@@ -479,5 +501,6 @@
             </div>
 
         </div>
+
     </body>
 </html>
