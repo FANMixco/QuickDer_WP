@@ -105,6 +105,7 @@
     <Content Include="www\img\key.png" />
     <Content Include="www\img\calendar.png" />
     <Content Include="www\img\id.png" />
+    <Content Include="www\img\map_marker.png" />
     <Content Include="www\img\search.png" />
     <Content Include="www\img\marker.png" />
     <Content Include="www\img\map.png" />
