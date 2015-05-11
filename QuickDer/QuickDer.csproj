@@ -17,7 +17,7 @@
  specific language governing permissions and limitations
  under the License. 
 -->
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -29,20 +29,28 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuickDer</RootNamespace>
     <AssemblyName>QuickDer</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
-    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
-    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>
+    </SilverlightVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <SilverlightApplication>true</SilverlightApplication>
     <SupportedCultures>
     </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>QuickDer.xap</XapFilename>
+    <XapFilename>QuickDer_$(Configuration)_$(Platform).xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <SilverlightAppEntry>QuickDer.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,16 +73,33 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget />
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget />
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget />
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget />
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Phone" />
-    <Reference Include="Microsoft.Phone.Interop" />
-    <Reference Include="System.Device" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Windows" />
-    <Reference Include="system" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Net" />
-    <Reference Include="System.Xml" />
     <Reference Include="WP7CordovaClassLib, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
@@ -90,10 +115,14 @@
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -103,10 +132,13 @@
     <Content Include="www\acts\index.html" />
     <Content Include="www\img\center.png" />
     <Content Include="www\img\group.png" />
+    <Content Include="www\img\Help\Search.png" />
+    <Content Include="www\img\Help\Start.png" />
     <Content Include="www\img\key.png" />
     <Content Include="www\img\calendar.png" />
     <Content Include="www\img\id.png" />
     <Content Include="www\img\map_marker.png" />
+    <Content Include="www\img\sad-face.png" />
     <Content Include="www\img\search.png" />
     <Content Include="www\img\marker.png" />
     <Content Include="www\img\map.png" />
@@ -115,6 +147,7 @@
     <Content Include="www\js\index.js" />
     <Content Include="www\acts\register.html" />
     <Content Include="www\js\jquery-1.7.1.min.js" />
+    <Content Include="www\js\jquery-1.8.1.min.js" />
     <Content Include="www\js\jquery.ba-dotimeout.min.js" />
     <Content Include="www\js\jquery_mobile\images\ajax-loader.gif" />
     <Content Include="www\js\jquery_mobile\images\ajax-loader.png" />
@@ -122,12 +155,12 @@
     <Content Include="www\js\jquery_mobile\images\icons-18-white.png" />
     <Content Include="www\js\jquery_mobile\images\icons-36-black.png" />
     <Content Include="www\js\jquery_mobile\images\icons-36-white.png" />
-    <Content Include="www\js\jquery_mobile\jquery.mobile-1.1.1.min.css" />
-    <Content Include="www\js\jquery_mobile\jquery.mobile-1.1.1.min.js" />
-    <Content Include="www\js\jquery_mobile\jquery.mobile.fixedToolbar.polyfill.css" />
-    <Content Include="www\js\jquery_mobile\jquery.mobile.fixedToolbar.polyfill.js" />
-    <Content Include="www\js\jquery_mobile\jquery.mobile.structure-1.1.1.min.css" />
-    <Content Include="www\js\jquery_mobile\jquery.mobile.theme-1.1.1.min.css" />
+    <Content Include="www\js\jquery_mobile\jquery.mobile-1.2.0-alpha.1.min.css" />
+    <Content Include="www\js\jquery_mobile\jquery.mobile-1.2.0-alpha.1.min.js" />
+    <Content Include="www\js\jquery_mobile\jquery.mobile-1.2.0.min.css" />
+    <Content Include="www\js\jquery_mobile\jquery.mobile-1.2.0.min.js" />
+    <Content Include="www\js\jquery_mobile\jquery.mobile.structure-1.2.0.min.css" />
+    <Content Include="www\js\jquery_mobile\jquery.mobile.theme-1.2.0.min.css" />
     <None Include="BuildManifestProcessor.js" />
     <Content Include="CordovaLib\WP7CordovaClassLib.dll" />
     <Content Include="www\cordova-2.0.0.js" />
@@ -163,8 +196,8 @@
   <ItemGroup>
     <Folder Include="Plugins\" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

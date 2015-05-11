@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is auto-generated, do not edit! -jm -->
+<CordovaSourceDictionary>
+    <FilePath Value="www\acts\map.html"/>
+    <FilePath Value="www\acts\copyright.html"/>
+    <FilePath Value="www\acts\index.html"/>
+    <FilePath Value="www\img\center.png"/>
+    <FilePath Value="www\img\group.png"/>
+    <FilePath Value="www\img\Help\Search.png"/>
+    <FilePath Value="www\img\Help\Start.png"/>
+    <FilePath Value="www\img\key.png"/>
+    <FilePath Value="www\img\calendar.png"/>
+    <FilePath Value="www\img\id.png"/>
+    <FilePath Value="www\img\map_marker.png"/>
+    <FilePath Value="www\img\sad-face.png"/>
+    <FilePath Value="www\img\search.png"/>
+    <FilePath Value="www\img\marker.png"/>
+    <FilePath Value="www\img\map.png"/>
+    <FilePath Value="www\img\shopping-cart.png"/>
+    <FilePath Value="www\img\star.png"/>
+    <FilePath Value="www\js\index.js"/>
+    <FilePath Value="www\acts\register.html"/>
+    <FilePath Value="www\js\jquery-1.7.1.min.js"/>
+    <FilePath Value="www\js\jquery-1.8.1.min.js"/>
+    <FilePath Value="www\js\jquery.ba-dotimeout.min.js"/>
+    <FilePath Value="www\js\jquery_mobile\images\ajax-loader.gif"/>
+    <FilePath Value="www\js\jquery_mobile\images\ajax-loader.png"/>
+    <FilePath Value="www\js\jquery_mobile\images\icons-18-black.png"/>
+    <FilePath Value="www\js\jquery_mobile\images\icons-18-white.png"/>
+    <FilePath Value="www\js\jquery_mobile\images\icons-36-black.png"/>
+    <FilePath Value="www\js\jquery_mobile\images\icons-36-white.png"/>
+    <FilePath Value="www\js\jquery_mobile\jquery.mobile-1.2.0-alpha.1.min.css"/>
+    <FilePath Value="www\js\jquery_mobile\jquery.mobile-1.2.0-alpha.1.min.js"/>
+    <FilePath Value="www\js\jquery_mobile\jquery.mobile-1.2.0.min.css"/>
+    <FilePath Value="www\js\jquery_mobile\jquery.mobile-1.2.0.min.js"/>
+    <FilePath Value="www\js\jquery_mobile\jquery.mobile.structure-1.2.0.min.css"/>
+    <FilePath Value="www\js\jquery_mobile\jquery.mobile.theme-1.2.0.min.css"/>
+    <FilePath Value="www\cordova-2.0.0.js"/>
+    <FilePath Value="www\css\index.css"/>
+    <FilePath Value="www\img\logo.png"/>
+    <FilePath Value="www\index.html"/>
+</CordovaSourceDictionary>

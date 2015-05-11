@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name = "format-detection" content = "telephone=no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;" />
+        <link rel="stylesheet" type="text/css" href="../css/index.css" />
+	    <link rel="stylesheet" href="../js/jquery_mobile/jquery.mobile-1.2.0-alpha.1.min.css" />
+        <script type="text/javascript" src="../cordova-2.0.0.js"></script>
+	    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+	    <script src="../js/jquery_mobile/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+        <title>Registrar</title>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#Back").click(function () {
+                    url = "../index.html";
+                    $(location).attr('href', url);
+                });
+				
+				var myForm = $("#frmRegister");
+				
+				myForm.submit( function (){				
+					$.support.cors = true; //Support Cross Domain - For Windows Phone
+					$.post('http://quickder.hostingsiteforfree.com/index.php/api/tour_service/register',
+                		{	email:$('#email').val(),
+							password:$('#password').val(),
+							password_confirm:$('#password_confirm').val(),
+							name:$('#name').val(),
+							surname:$('#surname').val()
+						},
+						function(data){ 
+							$('.lblErr').html(data.message);							
+						}
+					);					
+					return false;
+				});
+            });
+        </script>
+    </head>
+    <body>
+        <div data-role="page" id=Register>
+
+	        <div data-role="header">
+                <h1>Registrar</h1>
+	        </div>
+
+	        <div data-role="content">
+				<form id="frmRegister" action="http://localhost/UrTour/api/tour_service/register" method="post">
+					<table style="width: 100%;">
+						<tr>
+							<td>
+								<label>Correo electr&oacute;nico</label></td>
+							<td>
+								<input type="text" name="email" id="email" maxlength="100" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Contrase&ntilde;a</label></td>
+							<td>
+								<input id="password" name="password" type="password" maxlength="20" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Repetir Contrase&ntilde;a</label></td>
+							<td>
+								<input id="password_confirm" name="password_confirm" type="password" maxlength="20" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Nombre</label></td>
+							<td>
+								<input type="text" name="name" id="name" maxlength="100" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Apellido</label></td>
+							<td>
+								<input type="text" name="surname" id="surname" maxlength="100" />
+							</td>
+						</tr>
+					</table>				
+					<label for="checkbox-1">
+						<input type="checkbox" name="terms" id="checkbox-1" class="custom" data-mini="true" />Acepto los terminos y condiciones
+					</label>
+					<div style="text-align:center; margin:auto;">
+						<label class="lblErr"></label>
+						<br />
+						<fieldset class="ui-grid-a">
+							<legend></legend>
+							<div class="ui-block-a"><a href="#" data-role="button" id=Back data-theme="b" >Atrás</a></div>
+							<div class="ui-block-b"><input id="Submit1" type="submit" value="Crear" /></div>	   
+						</fieldset>
+					</div>
+				</form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,19 +1,40 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
+        <!--
+            http://www.quickder.hostingsiteforfree.com/index.php/api/tour_service/branchLocation
+        -->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name = "format-detection" content = "telephone=no"/>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;" />
         <link rel="stylesheet" type="text/css" href="../css/index.css" />
-	    <link rel="stylesheet" href="../js/jquery_mobile/jquery.mobile-1.1.1.min.css" />
+	    <link rel="stylesheet" href="../js/jquery_mobile/jquery.mobile-1.2.0-alpha.1.min.css" />
         <style type="text/css">
-
+            
+            p
+            {
+                text-align:justify;    
+            }
+            
+            img 
+            {
+                display: block;
+                margin: auto;                
+            }
+            
             .details-page {
                 width: 100%;
                 height: 100%;
             }
 
-            #map_content {
+            .Helps
+            {
+                padding-top:5px;
+                padding-left:10px;
+                padding-right:10px;
+            }
+
+        /*    #map_content {
                 padding: 0px;
                 width: 100%;
                 height: 100%;
@@ -25,14 +46,28 @@
                 width: 100%;
                 height: 100%;
                 padding: 0;
+            }*/
+
+            ui-footer.landscape
+            {
+                bottom:-35px;
             }
 
+		    .toolbarbutton-icon .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+		    .toolbarbutton-icon .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		    .map .ui-icon { background:  url(../img/map.png) 50% 50% no-repeat; background-size: 26px 21px;  }
+		    .search .ui-icon { background:  url(../img/search.png) 50% 50% no-repeat;  background-size: 24px 24px; }
+		    .shopping .ui-icon { background:  url(../img/shopping-cart.png) 50% 50% no-repeat;  background-size: 26px 19px; }
+		    .stockpile .ui-icon { background:  url(../img/calendar.png) 50% 50% no-repeat;  background-size: 23px 25px; }
+        	.place .ui-icon { background:  url(../img/marker.png) 50% 50% no-repeat; background-size: 16px 26px; }
+		    #about .ui-icon { background:  url(../img/group.png) 50% 50% no-repeat; background-size: 32px 21px;  }
+		    #star .ui-icon { background:  url(../img/star.png) 50% 50% no-repeat; background-size: 26px 26px; }
         </style>
         <script type="text/javascript" src="../cordova-2.0.0.js"></script>
 	    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
 	    <script type="text/javascript" src="../js/jquery.ba-dotimeout.min.js"></script>
         <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true&language=es"></script>
-	    <script type="text/javascript" src="../js/jquery_mobile/jquery.mobile-1.1.1.min.js"></script>
+	    <script type="text/javascript" src="../js/jquery_mobile/jquery.mobile-1.2.0-alpha.1.min.js"></script>
         <script type="text/javascript">
 
             $(document).ready(function () {
@@ -92,7 +127,7 @@
         <title>QuickDer</title>
     </head>
     <body>
-        <div data-role="page" id=Start>
+        <div data-role="page" id="Start">
 
 	        <div data-role="header">
 		        <h1>Bienvenido</h1>
@@ -100,25 +135,15 @@
 
 	        <div data-role="content">
 
-                <style>	
-		            .toolbarbutton-icon .ui-btn .ui-btn-inner { padding-top: 40px !important; }
-		            .toolbarbutton-icon .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
-		            #place .ui-icon { background:  url(../img/marker.png) 50% 50% no-repeat; background-size: 16px 26px; }
-		            #map .ui-icon { background:  url(../img/map.png) 50% 50% no-repeat; background-size: 26px 21px;  }
-		            #search .ui-icon { background:  url(../img/search.png) 50% 50% no-repeat;  background-size: 24px 24px; }
-		            #numbers .ui-icon { background:  url(../img/shopping-cart.png) 50% 50% no-repeat;  background-size: 26px 19px; }
-		            #stockpile .ui-icon { background:  url(../img/calendar.png) 50% 50% no-repeat;  background-size: 23px 25px; }
-    	        </style>
-	
 		        <div data-role="navbar" class="toolbarbutton-icon">
 		            <ul>
-			            <li><a href="#Places" id="place" data-icon="custom" data-theme="b">Lugares</a></li>
-			            <li><a href="#Location" id="map" data-icon="custom" data-theme="b">Mapa</a></li>
-			            <li><a href="#Search" id="search" data-icon="custom" data-theme="b">Buscar</a></li>
+			            <li><a href="#Places" class="place" data-icon="custom" data-theme="b">Lugares</a></li>
+			            <li><a href="#Location" class="map" data-icon="custom" data-theme="b">Mapa</a></li>
+			            <li><a href="#Search" class="search" data-icon="custom" data-theme="b">Buscar</a></li>
 		            </ul>
 		            <ul>
-			            <li><a href="#" id="numbers" data-icon="custom" data-theme="b">Compras</a></li>
-			            <li><a href="#" id="stockpile" data-icon="custom" data-theme="b">Reservaciones</a></li>
+			            <li><a href="#Shoppings" class="shopping" data-icon="custom" data-theme="b">Compras</a></li>
+			            <li><a href="#Stockpiles" class="stockpile" data-icon="custom" data-theme="b">Reservaciones</a></li>
 		            </ul>
 		        </div>
             </div>
@@ -136,6 +161,32 @@
 
         </div>
 
+        <div data-role="page" id=Shoppings data-add-back-btn=true data-back-btn-text=Atrás class="details-page">
+	        <div data-role="header">
+		        <h1>Compras</h1>
+	        </div>
+
+	        <div data-role="content">
+                <p style="font-size:larger; font-weight:bolder; text-align:center;">
+                    No posee compras.
+                </p>
+                <img alt="" src="../img/sad-face.png" />
+            </div>
+        </div>
+
+        <div data-role="page" id=Stockpiles data-add-back-btn=true data-back-btn-text=Atrás class="details-page">
+	        <div data-role="header">
+		        <h1>Reservaciones</h1>
+	        </div>
+
+	        <div data-role="content">
+                <p style="font-size:larger; font-weight:bolder; text-align:center;">
+                    No posee reservaciones.
+                </p>
+                <img alt="" src="../img/sad-face.png" />
+            </div>
+        </div>
+
         <div data-role="page" id=Location data-add-back-btn=true data-back-btn-text=Atrás class="details-page">
 
             <script type="text/javascript">
@@ -148,8 +199,8 @@
 		        <h1>Ubicación</h1>
 	        </div>
 
-	        <div data-role="content" id=map_content>
-                <div id='myMap'></div>
+	        <div data-role="content">
+                <div id='myMap' style="height:1000px; width:1000px;"></div>
             </div>
         </div>
         
@@ -223,25 +274,40 @@
 	        </div>
 
 	        <div data-role="content">
-                <ul data-role="listview" data-theme="g" data-filter="true">
+                <ul data-role="listview" data-theme="g" data-filter="true" data-split-icon="grid">
                     <li data-role="list-divider">Comida Rápida</li>
 	                <li><a href="#Menu">
-                        <img src="http://cdn-android.apptap.com/img/67/couponcoop.pizzahut/390323325.png" alt="" />
-                        <h3>Pizza Hut</h3>
-                        <p></p>
-                    </a></li>
+                            <img src="http://cdn-android.apptap.com/img/67/couponcoop.pizzahut/390323325.png" alt="" />
+                            <h3>Pizza Hut</h3>
+                            <p></p>
+                        </a>
+                        <!--<a href="#popupSMap" data-rel="popup" data-position-to="window" data-transition="pop">Lugar</a>-->
+                    </li>
 	                <li><a href="#">
-                        <img src="http://www.gestionrestaurantes.com/Solid/Galeria/PolloCampero.jpg" alt="" />
-                        <h3>Pollo Campero</h3>
-                        <p></p>
-                    </a></li>
+                            <img src="http://www.gestionrestaurantes.com/Solid/Galeria/PolloCampero.jpg" alt="" />
+                            <h3>Pollo Campero</h3>
+                            <p></p>
+                        </a>
+                        <!--<a href="#popupSMap" data-rel="popup" data-position-to="window" data-transition="pop">Lugar</a>-->
+                    </li>
                     <li data-role="list-divider">Restaurante</li>
 	                <li><a href="#">
-                        <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn1/40483_139153709453083_1571467_n.jpg" alt="" />
-                        <h3>Restaurante Hunan El Salvador</h3>
-                        <p></p>
-                    </a></li>
+                            <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn1/40483_139153709453083_1571467_n.jpg" alt="" />
+                            <h3>Restaurante Hunan El Salvador</h3>
+                            <p></p>
+                        </a>
+                        <!--<a href="#popupSMap" data-rel="popup" data-position-to="window" data-transition="pop">Lugar</a>-->
+                    </li>
                 </ul>
+
+<!--                <div data-role="popup" id=popupSMap data-overlay-theme="a" data-theme="a" data-corners="false" data-tolerance="15,15">
+
+                    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+	 
+                    <iframe src="map.html" width="100%" height="320" seamless></iframe>
+
+                </div>-->
+
             </div>
 
         </div>
@@ -253,26 +319,40 @@
 	        </div>
 
 	        <div data-role="content">
-                <ul data-role="listview" data-theme="g" data-filter="true">
+                <ul data-role="listview" data-theme="g" data-filter="true" data-split-icon="grid">
                     <li data-role="list-divider">Comida Rápida</li>
 	                <li><a href="#Menu">
-                        <img src="http://cdn-android.apptap.com/img/67/couponcoop.pizzahut/390323325.png" alt="" />
-                        <h3>Pizza Hut</h3>
-                        <p></p>
-                    </a></li>
+                            <img src="http://cdn-android.apptap.com/img/67/couponcoop.pizzahut/390323325.png" alt="" />
+                            <h3>Pizza Hut</h3>
+                            <p></p>
+                        </a>
+                        <!--<a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop">Lugar</a>-->
+                    </li>
 	                <li><a href="#">
-                        <img src="http://www.gestionrestaurantes.com/Solid/Galeria/PolloCampero.jpg" alt="" />
-                        <h3>Pollo Campero</h3>
-                        <p></p>
-                    </a></li>
+                            <img src="http://www.gestionrestaurantes.com/Solid/Galeria/PolloCampero.jpg" alt="" />
+                            <h3>Pollo Campero</h3>
+                            <p></p>
+                        </a>
+                        <!--<a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop">Lugar</a>-->
+                    </li>
                     <li data-role="list-divider">Restaurante</li>
 	                <li><a href="#">
-                        <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn1/40483_139153709453083_1571467_n.jpg" alt="" />
-                        <h3>Restaurante Hunan El Salvador</h3>
-                        <p></p>
-                    </a></li>
+                            <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn1/40483_139153709453083_1571467_n.jpg" alt="" />
+                            <h3>Restaurante Hunan El Salvador</h3>
+                            <p></p>
+                        </a>
+                        <!--<a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop">Lugar</a>-->
+                    </li>
                 </ul>
             </div>
+
+<!--            <div data-role="popup" id=popupMap data-overlay-theme="a" data-theme="a" data-corners="false" data-tolerance="15,15">
+
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+	 
+                <iframe src="map.html" width="100%" height="320" seamless></iframe>
+
+            </div>-->
 
         </div>
 
@@ -343,20 +423,11 @@
 	        </div>
 
 	        <div data-role="content">
-                <style>	
-		            .toolbarbutton-icon .ui-btn .ui-btn-inner { padding-top: 40px !important; }
-		            .toolbarbutton-icon .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
-		            #star .ui-icon { background:  url(../img/star.png) 50% 50% no-repeat; background-size: 26px 26px; }
-		            #shopping .ui-icon { background:  url(../img/shopping-cart.png) 50% 50% no-repeat; background-size: 26px 19px; }
-		            #h_stockpile .ui-icon { background:  url(../img/calendar.png) 50% 50% no-repeat; background-size: 23px 25px; }
-		            #about .ui-icon { background:  url(../img/group.png) 50% 50% no-repeat; background-size: 32px 21px;  }
-    	        </style>
-	
 		        <div data-role="navbar" class="toolbarbutton-icon" data-theme="d">
 		            <ul>
-			            <li><a href="#" id="star" data-icon="custom" data-theme="e">¿Ofertas?</a></li>
-			            <li><a href="#" id="shopping" data-icon="custom" data-theme="b">¿Compras?</a></li>
-			            <li><a href="#" id="h_stockpile" data-icon="custom" data-theme="b">¿Reservaciones?</a></li>                    
+			            <li><a href=#Offers id="star" data-icon="custom" data-theme="e">¿Ofertas?</a></li>
+			            <li><a href="#" class="shopping" data-icon="custom" data-theme="b">¿Compras?</a></li>
+			            <li><a href="#" class="stockpile" data-icon="custom" data-theme="b">¿Reservaciones?</a></li>                    
                     </ul>
                     <ul>
 			            <li><a href="#About" id="about" data-icon="custom" data-theme="b">Acerca De</a></li>                    
@@ -479,6 +550,30 @@
             </div>
 
         </div>
+
+        <div data-role="page" id=Offers data-add-back-btn=true data-back-btn-text=Atrás>
+
+	        <div data-role="header">
+                <h1>Ofertas</h1>
+	        </div>
+
+
+            <div data-role="Content" class=Helps>
+                <p>
+                    Mediante QuickDer, usted podrá enterarse de las mejores ofertas de sus lugares favoritos, simplemente haciendo clic en el botón de Inicio:
+                </p>
+                <img alt="Start" src="../img/Help/Start.png" />    
+                <p>
+                    y buscando o seleccionando su lugar de búsqueda de preferencia
+                </p>
+                <img alt="Start" src="../img/Help/Search.png" />
+                <p>
+                    dentro del perfil del lugar usted verá una lista de ofertas donde las más nuevas serán siempre las primeras en salir.
+                </p>
+            </div>
+
+        </div>
+
 
         <div data-role="page" id=About data-add-back-btn=true data-back-btn-text=Atrás>
 
